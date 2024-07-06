@@ -1,0 +1,218 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+
+}
+body{
+    background-color: rgb(175, 205, 247);
+}
+
+.container{
+    max-width: 1024px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+header .container{
+    display: flex;
+    justify-content:space-between;
+    padding: 16px;
+}
+
+header{
+    padding: 16px 0 0;
+    background-color: rgba(10, 38, 224, 0.5);
+    color: #fff;
+}
+
+h1{
+    font-style: italic;
+    font-size: 35px;
+}
+
+h3{
+    font-size: 20px;
+}
+
+.menu li, a {
+    float: left;
+    margin: 8px;
+    list-style: none;
+    color: #fff;
+    text-decoration: none;
+    position: relative;
+}
+
+
+.clear{ /* a propriedade CLEAR pode ser usada para garantir que os elementos sejam renderizados corretamente em diferentes formatos de tela*/
+    clear: both;
+}
+
+.noticia{
+    display: flex;
+    padding: 16px 0 0;
+    margin-bottom: 56px;
+}
+
+.noticia img{
+    margin-right: 16px;
+    max-width: 100%;
+}
+
+.noticia p{
+    margin-top: 32px;
+    font-size: 1.5em;
+    
+    
+}
+
+.conteudo h2{
+    border-bottom: 3px solid blue;
+    padding-bottom: 16px;
+    color: blue;
+    font-size: 30px;
+    font-style: italic;
+
+}
+
+.produtos{
+    display: grid;
+    grid-template-columns: 24.25% 24.25% 24.25% 24.25%;
+    column-gap: 1%;
+    text-align: center;
+
+}
+
+.produtos img{
+    height: 200px;
+    margin-top: 56px;
+    margin-bottom: 32px;
+}
+
+.produtos p{
+    margin-top: 16px;
+    font-size: 16px;
+}
+
+.produtos button{
+    width: 80%;
+    padding: 2px;
+    color: #fff;
+    background-color: rgb(40, 40, 238);
+    margin-top: 16px;
+    border-radius: 1px;
+    margin-bottom: 50px;
+    cursor: pointer;
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+@media screen and (max-width: 767px) {
+    .container{
+        max-width: 90%;
+    }
+    
+    .produtos{
+        display: block;
+        text-align: center;
+    }
+
+    .produtos img{
+        height: 300px;
+    }
+
+    .noticia{
+        display: block;
+        font-size: 1em;
+    }
+
+    .noticia img{
+        height: 300px;
+        margin-bottom: 32px;
+        margin-left: 16px;
+        margin-top: 32px;
+    }
+
+    .produtos button{
+        width: 100%;
+        padding: 8px;
+        border-radius: 8px;
+    }
+
+}
+
+@media screen and (min-width: 641px) and (max-width: 1023px) {
+    .container{
+        max-width: 90%;
+    }
+
+    .noticia{
+        display: block;
+        font-size: 1em;
+    }
+
+    .noticia img{
+        width: 100%;
+        margin-bottom: 50px;
+        margin-top: 50px;
+    
+    }
+
+    .noticia h2{
+        font-size: 50px;
+    }
+
+    .produtos{
+        grid-template-columns: 49% 49%;
+        text-align: center;
+    }
+
+    .produtos h3{
+        font-size: 30px;
+    }
+
+    .produtos img{
+        width: 100%;
+        height: 60%;
+        margin-bottom: 0;
+    }
+
+    .conteudo h2{
+        border-bottom: 3px solid blue;
+        padding-bottom: 16px;
+        color: blue;
+        font-size: 50px;
+        font-style: italic;
+    
+    }
+
+    .produtos button{
+        width: 100%;
+        padding: 16px;
+        border-radius: 8px;
+        font-size: 25px;
+    }
+
+    .produtos p{
+
+        font-size: 27px;
+        margin-top: 50px;
+    }
+
+    header h1{
+        font-size: 50px;
+    }
+
+    header li a{
+        font-size: 25px;
+    }
+
+
+
+}
+
+
+
